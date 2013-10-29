@@ -1,7 +1,9 @@
-<h1><%= @post.title%></h1>
+<h1>Level: <%= @post.title%></h1>
 
-<p><%= @post.content %></p>
+<p>Institution: <%= @post.content %></p>
 
 <p><%= link_to "Edit Post", edit_url(@post.id) %></p>
 
 <p><%= link_to "Delete Post", show_url(@post.id), :method => 'delete' %></p>
+
+<p><%= link_to "Go Back", posts_url %></p>

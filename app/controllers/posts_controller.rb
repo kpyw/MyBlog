@@ -18,19 +18,22 @@ def edit
 @post = Post.find_by(params[:id])
   end
 
+def new
+end
+
 def create
-  post = Post.find_by(params[:id])
+  post = Post.new
   post.title = params[:title]
   post.content = params[:content]
   post.save
   redirect_to posts_url
 end
 
-def new
-end
+
 
 def show
 @post=Post.find_by(params[:id])
+
 end
 
 def index
