@@ -1,11 +1,11 @@
 <%= form_tag show_url(@post.id), :method => 'patch' do %>
 
 <%= label_tag "title" %>
-  <%= text_field_tag  "title" , :value => @post.title%>
+  <%= text_field_tag  "title" ,  @post.title%>
   <br>
 
   <%= label_tag "content" %>
-  <%= text_field_tag  "content", :value => @post.content %>
+  <%= text_field_tag  "content", @post.content %>
   <br>
 
 <%= submit_tag "Submit Post" %>

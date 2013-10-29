@@ -1,6 +1,9 @@
 class PostsController < ApplicationController
 
 def delete
+ post = Post.find_by(id: params[:id])
+    post.destroy
+    redirect_to posts_url
 end
 
 def update

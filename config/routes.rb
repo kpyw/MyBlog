@@ -2,8 +2,8 @@ MyBlog::Application.routes.draw do
   get '/posts' => 'posts#index'
 
 
-  get '/posts/new' => 'posts#new', :as => 'new_post'
-  post '/posts/' => 'posts#create'
+  get '/posts/new' => 'posts#new', :as => 'new'
+  post '/posts' => 'posts#create'
 
   get '/posts/:id' => 'posts#show', :as => 'show'
 
