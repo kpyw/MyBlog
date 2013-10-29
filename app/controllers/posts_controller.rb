@@ -32,12 +32,12 @@ end
 
 
 def show
-@post=Post.find_by(params[:id])
+  @post = Post.find_by(id: params[:id])
 
 end
 
 def index
-@posts=Post.all
+  @posts=Post.all
 end
 
 end
