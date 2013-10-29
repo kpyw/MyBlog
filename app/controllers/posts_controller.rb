@@ -7,7 +7,7 @@ def delete
 end
 
 def update
-  post = Post.find_by(params[:id])
+  post = Post.find_by(id: params[:id])
   post.title = params[:title]
   post.content = params[:content]
   post.save
@@ -15,7 +15,7 @@ def update
 end
 
 def edit
-@post = Post.find_by(params[:id])
+@post = Post.find_by(id: params[:id])
   end
 
 def new
